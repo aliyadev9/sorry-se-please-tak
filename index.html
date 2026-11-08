@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light only">
-<title>Sorry Se Please Tak 🩷</title>
+<title>Sorry Se Please Tak 😝</title>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -38,14 +38,14 @@ p{font-size:16px;line-height:1.8;color:#111}
 .pad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:260px;margin:0 auto}
 .pad button{padding:16px;border-radius:50%;border:1px solid #E4E4E7;background:#fff;font-size:20px;font-weight:700;box-shadow:0 5px 0 #D4D4D8;cursor:pointer}
 .small{font-size:13px;color:#52525B}
-.shareBar{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-top:1px solid #E4E4E7;padding:10px;display:flex;gap:8px;justify-content:center;z-index:100}
-.shareBar a{flex:1;padding:12px 6px;border-radius:12px;border:none;font-weight:700;font-size:13px;cursor:pointer;text-decoration:none;text-align:center;color:#fff}
+.shareRow{display:flex;gap:8px;margin-top:14px;width:100%}
+.shareRow a{flex:1;padding:13px 6px;border-radius:12px;font-weight:700;font-size:13px;text-decoration:none;text-align:center;color:#fff}
 .wa{background:#25D366} .ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF)} .snap{background:#FFFC00;color:#111!important}
 .letterPage{background:#fff;border-radius:20px;padding:22px;text-align:left;min-height:260px;font-size:17px;line-height:2;box-shadow:0 12px 30px rgba(0,0,0,.1);white-space:pre-wrap}
 </style>
 </head>
 <body>
-<div class="topbar">SORRY SE PLEASE TAK • 🩷</div>
+<div class="topbar">SORRY SE PLEASE TAK • 😝</div>
 <div class="wrap">
 
 <div class="screen" id="s0"><div class="glass"><p style="font-size:50px">🔐</p><h1>Try Your <span class="pink">PIN</span></h1><p class="zinc italic">PIN dalo, dil khul jayega 🥺</p><div class="pinDots"><div class="dot" id="d1"></div><div class="dot" id="d2"></div><div class="dot" id="d3"></div><div class="dot" id="d4"></div></div><div class="pad"><button onclick="pin('1')">1</button><button onclick="pin('2')">2</button><button onclick="pin('3')">3</button><button onclick="pin('4')">4</button><button onclick="pin('5')">5</button><button onclick="pin('6')">6</button><button onclick="pin('7')">7</button><button onclick="pin('8')">8</button><button onclick="pin('9')">9</button><button onclick="pin('C')">C</button><button onclick="pin('0')">0</button><button onclick="pin('X')">⌫</button></div><p class="small" style="margin-top:12px">Koi bhi 4 number dabao, khul jayega 💖</p></div></div>
@@ -69,11 +69,9 @@ p{font-size:16px;line-height:1.8;color:#111}
 
 <div class="screen hidden" id="s9"><div class="glass"><h1>Pizza Burger <span class="blue">Momos</span> 🍕</h1><video controls playsinline preload="metadata" src="2026-11-07-205506567.mp4"></video><p style="margin-top:12px">Bhot time sy tumhry paiso sy kuch khaya NAHI khila dy yr plz 😂</p><button class="btn" onclick="go('s10')">Next ➡️ Last</button></div></div>
 
-<div class="screen hidden" id="s10"><div class="glass"><img src="ba1a10d89f141aee3fc223b2665071bc.jpg"><h1 style="margin-top:14px">Please <span class="pink">Maan Ja Na</span> 💖</h1><p style="font-size:22px">Please 🥺😭</p><p class="zinc italic">Ab to khila do yr...</p><button class="btn btn-silver" onclick="shareAll()">Share Karo 💖</button><p class="small" style="margin-top:10px">Neeche wali bar se bhi share kar sakty ho 👇</p></div><div style="height:70px"></div></div>
+<div class="screen hidden" id="s10"><div class="glass"><img src="ba1a10d89f141aee3fc223b2665071bc.jpg"><h1 style="margin-top:14px">Please <span class="pink">Maan Ja Na</span> 💖</h1><p style="font-size:22px">Please 🥺😭</p><p class="zinc italic">Ab to khila do yr...</p><button class="btn btn-silver" onclick="shareAll()">Share Karo 💖</button><div class="shareRow"><a class="wa" href="https://wa.me/?text=Sorry%20se%20Please%20tak%20-%20Dekho%20ye%20cute%20website%20https%3A%2F%2Faliyadev9.github.io%2Fsorry-se-please-tak%2F" target="_blank">WhatsApp</a><a class="ig" href="https://www.instagram.com/" target="_blank">Instagram</a><a class="snap" href="https://www.snapchat.com/" target="_blank">Snap</a></div></div></div>
 
 </div>
-
-<div class="shareBar"><a class="wa" href="https://wa.me/?text=Sorry%20se%20Please%20tak%20-%20Dekho%20ye%20cute%20website%20https%3A%2F%2Faliyadev9.github.io%2Fsorry-se-please-tak%2F" target="_blank">WhatsApp</a><a class="ig" href="https://www.instagram.com/" target="_blank">Instagram</a><a class="snap" href="https://www.snapchat.com/" target="_blank">Snap</a></div>
 
 <script>
 let pinVal="";
@@ -86,4 +84,4 @@ function openLetter2(){let el=document.getElementById('letter2'); el.classList.r
 function shareAll(){let url=location.href;let txt="Sorry se Please tak 🩷 Dekho ye cute website - "+url;if(navigator.share){navigator.share({title:"Sorry Se Please Tak",text:txt,url:url})}else{window.open("https://wa.me/?text="+encodeURIComponent(txt),"_blank")}}
 </script>
 </body>
-  </html>
+                                      </html>
